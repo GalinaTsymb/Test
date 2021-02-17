@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>test_select_font</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/styles/screen.css">
+
+
+    
+
+</head>
+
+<body  class="home">
+    <div id="wrapper">
+
+        <header id="site-header" class="header">
+
+</header>
+        <main id="main-wrapper">
+            <!-- main content box (rewritable with other pages)  -->
+                <div class="select-font">
+        <div class="container">
+            <div class="select-font__tabs-wrapper">
+                <h1>Please select one font</h1>
+                <ul class="select-font__tabs-list">
+                    <li class="select-font__tabs-item">
+                        <button data-href="#fon" class="btn dark js-tabSwitchSelectors active">my fonts</button>
+                    </li>
+                    <li class="select-font__tabs-item">
+                        <button data-href="#top" class="btn red js-tabSwitchSelectors" >buy fonts</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="select-font__tabs-content fonts">
+                <div id="fon" class="fonts__list js-tabPanelSelectors active">
+                    <div class="fonts__item big">
+                        <figure class="fonts__item_image big__image"><p class="big__image_text text">M</p></figure>
+                        <div class="big__wrapper">
+                            <input type="radio" name="fonts" id="marriweather" class="big__input" value="1">
+                            <label for="marriweather" class="label-text big__label">Marriweather project is led by Sorkin Type</label>
+                        </div>
+                    </div>
+                    <div class="small-wrapper">
+                        <div class="fonts__item small-content">
+                            <figure class="fonts__item_image small-content__image"><p class="small-content__image_text text pink">R</p></figure>
+                            <div class="small-content__wrapper">
+                                <input type="radio" name="fonts" id="roboto" value="2" class="small-content__input">
+                                <label for="roboto" class="small-content__label label-text">Roboto doesn&#39;t compromise, allowing letters  </label>
+                            </div>
+
+                        </div>
+                        <div class="fonts__item small-content">
+                            <figure class="fonts__item_image small-content__image"><p class="small-content__image_text text blue">NS</p></figure>
+                            <div class="small-content__wrapper">
+                                <input type="radio" name="fonts" id="sans" value="3" class="small-content__input">
+                                <label for="sans" class="small-content__label label-text">Moto sans covers over 30 scripts </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="fonts-purchase-list">
+                    <li class="fonts-purchase-list__item" data-index="1">
+                        <p> Merriweather was designed to be a text face that is pleasant to read on screens. It features a very large x height, slightly condensed letterforms, a mild diagonal stress, sturdy serifs and open forms.
+
+                            There is also Merriweather Sans, a sans-serif version which closely harmonizes with the weights and styles of this serif family.
+
+                            The Merriweather project is led by Sorkin Type, a type design foundry based in Western Massachaussets, USA. To contribute, see github.com/EbenSorkin/Merriweather</p>
+                    </li>
+                    <li class="fonts-purchase-list__item" data-index="2">
+                        <p>
+                            Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+
+                            This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family.
+
+                            To contribute, see github.com/google/roboto
+                        </p>
+                    </li>
+                    <li class="fonts-purchase-list__item" data-index="3">
+                        <p>
+                            When text is rendered by a computer, sometimes there will be characters in the text that can not be displayed, because no font that supports them is available to the computer. When this occurs, small boxes are shown to represent the characters. We call those small boxes “tofu,” and we want to remove tofu from the Web. This is how the Noto font families got their name.
+
+                            Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. This is the Sans Latin, Greek and Cyrillic family. It has Regular, Bold, Italic and Bold Italic styles and is hinted. It is derived from Droid, and like Droid it has a serif sister family, Noto Serif.
+                        </p>
+                    </li>
+                </ul>
+                <div id="top" class="fonts-purchase-massage js-tabPanelSelectors js-purchase-massage ">
+                    Please select a purchase!!!
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </main>
+
+        <footer id="footer" class="footer">
+
+</footer>
+
+
+    </div>
+
+      <script type="module" src="assets/js/customization.js"></script>
+
+</body>
+</html>

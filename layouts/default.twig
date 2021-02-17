@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>{{ title }}</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/styles/screen.css">
+
+
+    {{ head_metatags }}
+
+</head>
+
+<body {% if body_class %} class="{{ body_class }}"{% endif %}>
+    <div id="wrapper">
+
+        {% include "inc/_header.twig" %}
+
+        <main id="main-wrapper">
+            <!-- main content box (rewritable with other pages)  -->
+            {% block content %}{% endblock %}
+        </main>
+
+        {% include "inc/_footer.twig" %}
+    </div>
+
+      <script type="module" src="assets/js/customization.js"></script>
+
+</body>
+</html>
